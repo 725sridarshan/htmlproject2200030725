@@ -1,0 +1,20 @@
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>View All</title>
+</head>
+<body>
+<table border="2" align="center" bgcolor="lightblue">
+<tr>
+<th>ID</th>
+<th>NAME</th>
+<th>COST</th>
+</tr>
+<tr th:each="p: ${products}">
+<td th:text="${p.id}">ID</td>
+<td th:text="${p.name}">NAME</td>
+<td th:text="${p.cost}">COST</td>
+</tr>
+</table>
+</body>
+</html>
